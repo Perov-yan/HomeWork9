@@ -12,5 +12,21 @@ public class Main {
             sum = sum + element;
         }
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        System.out.println(" ");
+        System.out.println("Задание 2:");
+        int spendingMax = spending[0];
+        int spendingMin = spending[0];
+        for (int i = 0; i < spending.length - 1; i++){
+            final int current = spending[i];
+            if (current > spendingMax){
+                spendingMax = current;
+            }
+            if (current < spendingMin){
+                spendingMin = current;
+            }
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + spendingMin + " рублей. Максимальная сумма трат за неделю составила " + spendingMax + " рублей");
+        System.out.println(" ");
+
     }
 }
