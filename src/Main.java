@@ -27,6 +27,14 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за неделю составила " + spendingMin + " рублей. Максимальная сумма трат за неделю составила " + spendingMax + " рублей");
         System.out.println(" ");
-
+        System.out.println("Задание 3:");
+        sum = 0;
+        int week = 0;
+        for (; week < spending.length; week++){
+            sum = sum + spending[week];
+        }
+        int result = sum / week;
+        System.out.println("Средняя сумма трат за месяц составила " + result + " рублей");
+        System.out.println(" ");
     }
 }
