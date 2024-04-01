@@ -33,7 +33,7 @@ public class Main {
         for (; week < spending.length; week++){
             sum = sum + spending[week];
         }
-        int result = sum / week;
+        double result = sum / week;
         System.out.println("Средняя сумма трат за месяц составила " + result + " рублей");
         System.out.println(" ");
     }
