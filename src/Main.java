@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Задание 2:");
         int spendingMax = spending[0];
         int spendingMin = spending[0];
-        for (int i = 0; i < spending.length - 1; i++){
+        for (int i = 0; i < spending.length; i++){
             final int current = spending[i];
             if (current > spendingMax){
                 spendingMax = current;
@@ -29,11 +29,10 @@ public class Main {
         System.out.println(" ");
         System.out.println("Задание 3:");
         sum = 0;
-        int week = 0;
-        for (; week < spending.length; week++){
-            sum = sum + spending[week];
+        for (int i = 0; i < spending.length; i++){
+            sum = sum + spending[i];
         }
-        double result = sum / week;
+        double result = 1.0 * sum / spending.length;
         System.out.println("Средняя сумма трат за месяц составила " + result + " рублей");
         System.out.println(" ");
         System.out.println("Задание 4:");
