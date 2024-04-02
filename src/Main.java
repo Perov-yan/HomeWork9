@@ -29,10 +29,11 @@ public class Main {
         System.out.println(" ");
         System.out.println("Задание 3:");
         sum = 0;
-        for (int i = 0; i < spending.length; i++) {
-            sum = sum + spending[i];
+        int week = 0;
+        for (; week < spending.length; week++) {
+            sum = sum + spending[week];
         }
-        double result = 1.0 * sum / spending.length;
+        double result = sum / (double)week;
         System.out.println("Средняя сумма трат за месяц составила " + result + " рублей");
         System.out.println(" ");
         System.out.println("Задание 4:");
